@@ -89,7 +89,7 @@ When you run the script, the menu provides options:
 
 ---
 
-## 👨‍💻 Credits
+## 👨💻 Credits
 - Project: **DISWEBSPAM**  
 - Author: [r8ck0](https://github.com/r8ck0)  
 - Language: Python 3  
