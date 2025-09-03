@@ -7,6 +7,21 @@
 
 ---
 
+## 📌 Overview
+This script demonstrates how to:
+- Send HTTP requests to Discord webhooks with Python
+- Handle rate-limiting and retries
+- Use multithreading for concurrent tasks
+- Build a simple command-line interface (CLI)
+
+The script provides a menu where you can:
+- Paste a webhook URL
+- Send multiple messages (up to 1500, multithreaded)
+- View developer credits
+- Exit the program
+
+---
+
 ## 🐧 Setup on Kali Linux
 
 1. **Update system packages:**
@@ -38,41 +53,24 @@
 
 6. **Run the script:**
    ```bash
-   python3 script.py
+   python3 First\ WebSpam.py
    ```
-
----
-
-## 📌 Overview
-`DISWEBSPAM` is a Python 3 script that demonstrates:
-- Sending HTTP requests to Discord webhooks
-- Handling rate-limiting with retries
-- Using multithreading to distribute tasks
-- Building a simple command-line interface (CLI) menu system
-
-Tested on **Kali Linux**, but it should run on any Linux distribution or OS with Python 3 installed.
-
----
-
-## ⚙️ Requirements
-- **Python 3.8+**
-- `requests` (Python HTTP library)
-
-Install dependencies with:
-
-```bash
-pip install requests
-```
 
 ---
 
 ## 🚀 Usage
 
-From the script menu:
+When you run the script, the menu provides options:
 - **[1] Paste Webhook** → enter your test Discord webhook URL  
 - **[2] Send Messages** → specify number of messages and threads  
 - **[3] Devs / Credits** → project credits  
 - **[4] Exit** → quit program  
+
+---
+
+## ⚙️ Requirements
+- **Python 3.8+**
+- `requests` library
 
 ---
 
@@ -87,13 +85,13 @@ From the script menu:
 1. Create a **private Discord server** that you own.  
 2. Generate a webhook (Server Settings → Integrations → Webhooks).  
 3. Use that webhook URL in the script.  
-4. Send a few messages to observe multithreading and rate-limit handling in action.  
+4. Send a few test messages to observe multithreading and rate-limit handling.  
 
 ---
 
 ## 👨‍💻 Credits
 - Project: **DISWEBSPAM**  
 - Author: [r8ck0](https://github.com/r8ck0)  
-- Python 3 CLI, threading, and requests demo  
+- Language: Python 3  
 
 ---
