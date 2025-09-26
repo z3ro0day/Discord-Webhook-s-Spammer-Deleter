@@ -3,7 +3,7 @@ import time
 import os
 import threading
 
-# Globals
+
 WEBHOOK_URL = None
 USERNAME = "DISWEB WEBHOOK"
 MAX_MESSAGES = 1500
@@ -57,7 +57,7 @@ def spam_messages(msg, amount, threads=5):
     sent = 0
     lock = threading.Lock()
 
-    # Divide work between threads (even distribution)
+
     def worker(start, end):
         nonlocal sent
         for _ in range(start, end):
@@ -66,7 +66,7 @@ def spam_messages(msg, amount, threads=5):
                     sent += 1
                     print(f"[+] Sent {sent}/{amount}")
 
-    # Split message count across threads
+  
     chunk = amount // threads
     remainder = amount % threads
     thread_list = []
